@@ -12,3 +12,5 @@ Brief Structural description:
     A special clock feature displaying real time take from system clock was implemented using an embedded java script code into the HTML file itself.
     The result webpage also has links to 4 other reliable news websites and 4 websites related to covid-19 resources to highlight the ongoing pandemic situation and if possible       provide aid.
     An animated background has been implemented to make the website look more visually appeasing.
+    
+    Link to the Dataset: https://drive.google.com/file/d/1QgPOR6DWajhny0vuhXUXCklz0cgLsEbG/view?usp=sharing
