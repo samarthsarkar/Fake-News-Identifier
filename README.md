@@ -1,6 +1,9 @@
 # Fake-News-Identifier
 
-
+Project Overview:
+    This project is aimed at reducing mass hysteria and panic caused due to the spread of fake news and 
+    misinformation which is very prevalent in times of crisis.
+    
 Techstack details and technicalities:
     Machine learning with a 'PassiveAggressiveClassifier' model was used to develop the backend.
     Prewritten dataset news.csv was used as the primary dataset to implement machine learning in the learning algorithm.
@@ -13,5 +16,5 @@ Brief Structural description:
     The result webpage also has links to 4 other reliable news websites and 4 websites related to covid-19 resources to highlight the ongoing pandemic situation and if possible       provide aid.
     An animated background has been implemented to make the website look more visually appeasing.
     
-    Link to the Dataset: https://drive.google.com/file/d/1QgPOR6DWajhny0vuhXUXCklz0cgLsEbG/view?usp=sharing
+    Link to the Dataset used: https://drive.google.com/file/d/1QgPOR6DWajhny0vuhXUXCklz0cgLsEbG/view?usp=sharing
     Link to demo video: https://drive.google.com/file/d/17hlAbs5ZL0O-kU01NMBkoIIcA4voY5Yi/view?usp=sharing
