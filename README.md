@@ -14,3 +14,4 @@ Brief Structural description:
     An animated background has been implemented to make the website look more visually appeasing.
     
     Link to the Dataset: https://drive.google.com/file/d/1QgPOR6DWajhny0vuhXUXCklz0cgLsEbG/view?usp=sharing
+    Link to demo video: https://drive.google.com/file/d/17hlAbs5ZL0O-kU01NMBkoIIcA4voY5Yi/view?usp=sharing
