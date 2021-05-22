@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+  <meta charset="UTF-8">
+  <title>Fake News📰 Detection System</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<script src="js/script.js"></script>
+</head>
+
+
+<body onload="realtimeClock()">
+
+
+<a href="https://www.cowin.gov.in/">
+         <img alt="Cowin" src="https://w.ndtvimg.com/sites/3/2021/01/20175419/660x330-cowin2.jpg"
+			  align = "left"
+         width="150" height="80">
+      </a>
+
+<a href="https://www.ndtv.com/">
+         <img alt="NDTV" src="https://i1.wp.com/www.opindia.com/wp-content/uploads/2018/05/NDTV.png?fit=600%2C400&ssl=1"
+			  align = "right"
+         width="135" height="70"> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+      </a>
+
+<a href="https://www.covidresourcesindia.com/">
+         <img alt="Covid Resources" src="https://www.visitgainesville.com/wp-content/uploads/2020/03/covid-19-banner2-920x460.jpg"
+			  align = "left"
+         width="150" height="95">
+      </a>
+
+<a href="https://www.bbc.co.uk/">
+         <img alt="BBC" src="https://imjustcreative.com/wp-content/uploads/2010/05/BBC_logo_black_background-1.jpg"
+			  align = "right"
+         width="140" height="100"> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+      </a>
+
+<a href="https://www.mygov.in/covid-19/">
+         <img alt="Covid Resources" src="https://www.afsnet.org/resource/resmgr/covid-19_page_slide.png"
+			  align = "left"
+         width="150" height="95">
+ </a>
+
+
+<a href="https://timesofindia.indiatimes.com/">
+         <img alt="Times of India" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkKOF5Ncq4UHe79kkWW-agNgLsBPA_cHAbrg&usqp=CAU"
+			  align = "right"
+         width="140" height="80"> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+      </a>
+
+<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">
+         <img alt="WHO " src="https://www.publichealth.com.ng/wp-content/uploads/2020/09/World-Health-Organization-Logo-emblem.png"
+			  align = "left"
+         width="150" height="80">
+ </a>
+
+<a href="https://edition.cnn.com/">
+         <img alt="CNN" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtg-WtnKEshCMNpHYgbK9yx9OXZIea9m4w_A&usqp=CAU"
+			  align = "right"
+         width=140" height="80"> <br/> <br/>
+      </a>
+
+ <div class="login">
+	<h1 style = font-size: 25px; > Fake News Detector 📰 </h1>
+
+    <form action="{{ url_for('predict')}}" method="POST">
+    	<textarea  name="message" rows="6" cols="50" required="required" style="font-size: 18pt"></textarea>
+		</br> </br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+        	<div class="results">
+
+	{% if prediction == ['FAKE']%}
+				<h2 style="color:red;">FAKE NEWS📰 </h2>
+				<h3 style="...">This news is fake.Please verify your sources.</h3>
+	{% elif prediction == ['REAL']%}
+				<h2 style="color:green;"><b>REAL NEWS📰</b></h2>
+				<h3 style="...">This news is real.Verified source.</h3>
+	{% endif %}
+
+	</div>
+	<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+
+    </form>
+
+</div>
+</body>
